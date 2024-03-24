@@ -1,5 +1,9 @@
 # eBPF-XDP
+
 Implementazione di un mini basico Firewall in eBPF XDR
+
+![image](https://github.com/Davide1986/eBPF-XDP/assets/6768906/85b0784b-facb-4f33-8a57-7fcb5227d282)
+
 
 Come prima operazione del Firewall è quella di bloccare un indirizzo IP specifico, nel nostro esempio useremo l'indirizzo IP 8.8.8.8 . Successivamente nei prossimi articoli faremo in modo che si passi una lista di indirizzi IP da bloccare in tempo reale.
 ATTENZIONE!! Per riprodurre quanto andrò a spiegare , dovete avere un sistema operativo aggiornato, dove siete amministratori quindi collegarsi con i poteri di "root" . Molti punti verranno saltati per scelta di praticità dell'articolo, qualora vi occorre ulteriori informazioni, basta commentare e spiegare cosa non vi è chiaro.
@@ -46,6 +50,14 @@ wget https://github.com/eunomia-bpf/eunomia-bpf/releases/latest/download/ecc && 
 
 ./ecc ebpf-probe.c
 sudo ./ecli run package.json 
+
+![image](https://github.com/Davide1986/eBPF-XDP/assets/6768906/cb9cf23c-20b2-436a-ac26-fef46a4c72fb)
+
+![image](https://github.com/Davide1986/eBPF-XDP/assets/6768906/17611cf5-3ad8-46d4-b85b-80b5eafdb216)
+
+Quando viene chiuso il programma, ritorna ad eseguire il ping verso l'indirizzo IP 8.8.8.8
+![image](https://github.com/Davide1986/eBPF-XDP/assets/6768906/f83496e6-855d-461a-9586-12cd3162c078)
+
 
 
 Fonti 
