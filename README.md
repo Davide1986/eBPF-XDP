@@ -1,6 +1,6 @@
 # eBPF-XDP
 
-Implementazione di un mini basico Firewall in eBPF XDR
+Implementazione di un mini basico Firewall in eBPF XDP
 
 ![image](https://github.com/Davide1986/eBPF-XDP/assets/6768906/85b0784b-facb-4f33-8a57-7fcb5227d282)
 
